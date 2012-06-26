@@ -1,0 +1,132 @@
+@import "compass";
+
+$title_size: 32px;
+$article_text: $title_size/2.5;
+$article_color: #333;
+
+.article {
+	position: relative;
+	//@include background-image(linear-gradient( #FFF, #EEE));
+	background: #F0F0F0;
+	padding: 25px 20px;
+
+	.heading{
+		margin-bottom: 10px;
+	
+		.title{
+			float: left;
+			width: 70%;
+		}
+		
+		.title, .title a, .title a:visited{
+			text-decoration: none;
+			color: $article_color;
+			font:{
+				size: $title_size;
+				weight: bold;
+			}
+		}
+
+		.info{
+			float: right;
+			width: 25%;
+			font-size: 12px;
+			color: #666;
+			
+			.rightcol{
+				float: right;
+				border-left: 1px solid silver;
+				padding-left: 3px;
+			}
+			
+			.leftcol{
+				float: left;
+				width: 75%;
+				text-align: right;
+			}
+
+			.section{
+
+			}
+
+			.category{
+
+			}
+
+			.author{
+
+			}
+
+			.date.updated, .date.created{
+				span{
+					text-transform: uppercase;
+					font-size: 20px;
+					font-weight: bolder;
+					display: block;
+					text-align: center;
+				}
+				.day{
+					background-color: #D0D0D0;
+					font-size: 30px;
+					color: #999;
+				}
+			}
+		}
+		
+	}
+	
+}
+
+
+.article-content{
+	color: $article_color;
+	font-size: $article_text;
+	a, a:visited{
+		color: lighten($article_color, 10%);
+	}
+	b, strong{
+		color: darken($article_color, 20%);
+		font-weight: bold;
+	}
+	em{
+		color: darken($article_color, 20%);
+		font-style: italic;
+	}
+	p{
+		padding: 5px 0;
+	}
+
+	h1, h2, h3, h4, h5{
+		color: darken($article_color, 20%);
+		font-weight: bold;
+		padding: 5px 0;
+	}
+	
+	h2{
+		font-size: $article_text + 8px;
+	}
+	h3{
+		font-size: $article_text + 4px;
+	}
+	h4{
+		font-size: $article_text + 2px;
+	}
+	
+	ul li{
+		padding-left: 15px;
+	}
+
+	img{
+		padding: 10px;
+		border: 1px solid #CCC;
+		background: white;
+	}
+
+}
+
+
+.article-separator {
+	display: block;
+	background: white;
+	height: 1px;
+}

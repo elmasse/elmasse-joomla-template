@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="template">
+	<name>elmasse-0.1</name>
+	<version>0.1</version>
+	<creationDate>09/2008</creationDate>
+	<author>elmasse</author>
+	<description>TEMPLATE_DESCRIPTION</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+        <filename>favicon.ico</filename>
+	</files>
+    <positions>            
+        <position>top</position>            
+        <position>content</position>            
+        <position>footer</position>      
+</positions> 
+</install>
