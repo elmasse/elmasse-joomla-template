@@ -1,7 +1,7 @@
 @import "compass";
 
-$title_size: 32px;
-$article_text: $title_size/2.5;
+$title_size: 36px;
+$article_text: ($title_size/3) + 2;
 $article_color: #333;
 
 .article {
@@ -81,6 +81,7 @@ $article_color: #333;
 .article-content{
 	color: $article_color;
 	font-size: $article_text;
+	line-height: $article_text + 8;
 	a, a:visited{
 		color: lighten($article_color, 10%);
 	}
